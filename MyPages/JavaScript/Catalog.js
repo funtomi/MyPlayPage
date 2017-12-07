@@ -1,4 +1,75 @@
-﻿function CreateList() {
+﻿$(function () {
+    new CreateList([
+           {
+               project: [{
+                   text: "12月"
+               },
+               {
+                   text: "静态html中实现语言切换",
+                   href: "/Views/Language.html"
+               },
+               {
+                   text: "实例索引",
+                   href: "#"
+               },
+               {
+                   text: "实例索引",
+                   href: "#"
+               },
+               {
+                   text: "实例索引",
+                   href: "#"
+               },
+               {
+                   text: "实例索引",
+                   href: "#"
+               },
+               {
+                   text: "实例索引",
+                   href: "#"
+               }]
+           },
+
+           {
+               project: [{
+                   text: "12月"
+               },
+               {
+                   text: "实例索引",
+                   href: "#"
+               },
+               {
+                   text: "实例索引",
+                   href: "#"
+               },
+               {
+                   text: "实例索引",
+                   href: "#"
+               },
+               {
+                   text: "实例索引",
+                   href: "#"
+               },
+               {
+                   text: "实例索引",
+                   href: "#"
+               },
+               {
+                   text: "实例索引",
+                   href: "#"
+               },
+               {
+                   text: "实例索引",
+                   href: "#"
+               },
+               {
+                   text: "实例索引",
+                   href: "#"
+               }]
+           },
+    ]);
+})
+function CreateList() {
     this.oWrap = document.createElement("div");
     this.copyright = document.createElement("div");
     this.initialize.apply(this, arguments);
