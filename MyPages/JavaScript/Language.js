@@ -56,23 +56,30 @@ function __tr(src) {
 
 function loadDict() {
     var lang = (getCookieVal("lang") || "en");
-    $.getJSON("F:/MyPage/MyPlayPage/MyPages/Views/" + lang + ".json", function (data) {
-        //$.ajax({
-        //    async: false,
-        //    type: "GET",
-        //    url: lang + ".json",
-        //    dataType:"json",
-        //    success: function (msg) {
-        dict = eval("(" + msg + ")");
-        alert("success");
-    });
-    $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags=cat&tagmode=any&format=json&jsoncallback=?", function (data) {
-        alert("success");
-        $.each(data.items, function (i, item) {
-            $("<img/>").attr("src", item.media.m).appendTo("#images");
-            if (i == 3) return false;
+    $.getJSON(lang + ".json", function (data) {
+        $.ajax({
+            async: false,
+            type: "GET",
+            url: lang + ".json",
+            dataType: "json",
+            success: function (msg) {
+                alert("success");
+            },
+            error: function (msg) {
+                alert(msg);
+            }
         });
-});
+    });
+    //    dict = eval("(" + msg + ")");
+    //    alert("success");
+    //});
+    //$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags=cat&tagmode=any&format=json&jsoncallback=?", function (data) {
+    //    alert("success");
+    //    $.each(data.items, function (i, item) {
+    //        $("<img/>").attr("src", item.media.m).appendTo("#images");
+    //        if (i == 3) return false;
+    //    });
+//});
     //});
 }
 
