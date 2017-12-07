@@ -6,7 +6,7 @@
                },
                {
                    text: "静态html中实现语言切换",
-                   href: "/Views/Language.html"
+                   href: "../Views/Language.html"
                },
                {
                    text: "实例索引",
