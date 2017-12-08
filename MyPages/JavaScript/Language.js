@@ -62,7 +62,7 @@ function loadDict() {
         url: lang + ".json",
         success: function (msg) {
             dict = msg;
-        },
+        }
     });
 }
 

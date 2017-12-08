@@ -7,17 +7,32 @@
     <title></title>
 </head>
 <body>
-    <form class="form-inline">
-        <div class="form-group">
-            <label for="exampleInputName2" lang="">name</label>
-            <input type="text" class="form-control" id="exampleInputName2" placeholder="Please enter name" lang="">
-        </div>
-        <div class="form-group">
-            <button class="btn btn-default"  id="enBtn" >English</button>
-            <button class="btn btn-default" type="button" id="zhBtn" >中文</button>
-            <div id="images"></div>
-        </div>
-    </form>
+    <div class="container" style="width:100%;">
+            <div class="col-md-10">
+                &nbsp;
+            </div>
+            <div class="col-md-2">
+                <div class="btn-group">
+                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" lang="">Select Language<span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" id="enBtn">English</a></li>
+                        <li><a href="#" id="zhBtn">中文</a></li>
+                    </ul>
+                </div>
+            </div>
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="exampleInputName2" lang="">name</label>
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Please enter name" lang="">
+            </div>
+            <!--<div class="form-group">
+                <button class="btn btn-default" id="enBtn">English</button>
+                <button class="btn btn-default" type="button" id="zhBtn">中文</button>
+                <div id="images"></div>
+            </div>-->
+        </form>
+
+    </div>
 </body>
 </html>
 <script src="../BootStrap/bootstrap.js"></script>
