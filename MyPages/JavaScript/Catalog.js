@@ -7,71 +7,22 @@
                {
                    text: "静态html中实现语言切换",
                    href: "Language.html"
-               },
-               {
-                   text: "实例索引",
-                   href: "#"
-               },
-               {
-                   text: "实例索引",
-                   href: "#"
-               },
-               {
-                   text: "实例索引",
-                   href: "#"
-               },
-               {
-                   text: "实例索引",
-                   href: "#"
-               },
-               {
-                   text: "实例索引",
-                   href: "#"
                }]
            },
 
            {
                project: [{
-                   text: "12月"
+                   text: "1月"
                },
                {
-                   text: "实例索引",
-                   href: "#"
-               },
-               {
-                   text: "实例索引",
-                   href: "#"
-               },
-               {
-                   text: "实例索引",
-                   href: "#"
-               },
-               {
-                   text: "实例索引",
-                   href: "#"
-               },
-               {
-                   text: "实例索引",
-                   href: "#"
-               },
-               {
-                   text: "实例索引",
-                   href: "#"
-               },
-               {
-                   text: "实例索引",
-                   href: "#"
-               },
-               {
-                   text: "实例索引",
-                   href: "#"
+                   text: "动画1",
+                   href: "JellyPage.html"
                }]
            },
     ]);
 })
 function CreateList() {
-    this.oWrap = document.createElement("div");
-    this.copyright = document.createElement("div");
+    this.oWrap = document.createElement("div"); 
     this.initialize.apply(this, arguments);
     this.click.call(this)
 }
@@ -96,11 +47,8 @@ CreateList.prototype = {
             this.oWrap.appendChild(oDl);
             aData.shift()
         }
-        this.oWrap.id = "wrap";
-        this.copyright.id = "copyright";
-        this.copyright.innerHTML = "";
-        document.body.appendChild(this.oWrap);
-        document.body.appendChild(this.copyright)
+        this.oWrap.id = "wrap"; 
+        document.body.appendChild(this.oWrap); 
     },
     click: function () {
         var that = this;
